@@ -55,17 +55,17 @@ function createNewItem(itemData, callback) {
         return callback(err);
       }
       items=items? items:[]
-      // Generate a new ID for the item
+   
       const newId = Date.now();
   
-      // Create the new item with the provided data
+   
       const newItem = { id: newId, ...itemData };
   
-      // Add the new item to the array of items
+   
       console.log(items);
       items.push(newItem);
   
-      // Save the updated data back to the JSON file
+   
       writeData(items, (writeErr) => {
         if (writeErr) {
           console.log(items);
@@ -95,29 +95,6 @@ app.post('/createitem',upload.single('image'),(req,res)=>{
         }
       });
 
-//     var it
-
-//      readData((err, items) => {
-//     if (err) {console.log(err);
-//         return res.send({
-//             status:false,
-//             err:err,
-//         })
-//     }
-//     const newItem = { id: Date.now(), ...itemData };
-//     items.push(newItem);
-//     writeData(items, (writeErr) => {
-//       if (writeErr) {
-//         return callback(writeErr);
-//       }
-//       return res.send({
-//         status:false,
-//         err:err,
-//         msg:"data created",
-//     })
-//     });
-//   });
-
 })
 
 function readItemsPerPage(pageNumber, itemsPerPage, callback) {
@@ -126,13 +103,13 @@ function readItemsPerPage(pageNumber, itemsPerPage, callback) {
         return callback(err, null);
       }
   
-      // Calculate start and end indices for the page
+   
       const startIndex = (pageNumber - 1) * itemsPerPage;
       const endIndex = startIndex + itemsPerPage;
       
 
       console.log(pageNumber,itemsPerPage);
-      // Slice the items array to get the items for the current page
+   
       const itemsForPage = items.slice(startIndex, endIndex);
   
       return callback(null, itemsForPage);
