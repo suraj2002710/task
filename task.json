@@ -1,0 +1,146 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "task",
+    "dateExported": "2023-07-20T15:07:48.494Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f5fea3fa-591e-441d-9a06-e83ae2c3c13f",
+            "colId": "2d7b72d3-b13f-47b4-9daf-2e30bb3cad7d",
+            "containerId": "",
+            "name": "createitem",
+            "url": "http://localhost:5000/createitem",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-20T14:30:43.307Z",
+            "modified": "2023-07-20T14:48:23.000Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "suraj12345"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "sfsdfsdsdfsdfsdf"
+                    },
+                    {
+                        "name": "is_Active",
+                        "value": "false"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\Dell\\Pictures\\mob1.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "859dd122-effd-424d-abfb-5eb31a2428cd",
+            "colId": "2d7b72d3-b13f-47b4-9daf-2e30bb3cad7d",
+            "containerId": "",
+            "name": "getallitem",
+            "url": "http://localhost:5000/getallitem",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-20T14:37:56.159Z",
+            "modified": "2023-07-20T14:39:31.587Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pageNumber\":1,\n  \"itemsPerPage\":10\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce12e7e7-ee48-4585-9eca-c9673cba5fee",
+            "colId": "2d7b72d3-b13f-47b4-9daf-2e30bb3cad7d",
+            "containerId": "",
+            "name": "getsingleitem",
+            "url": "http://localhost:5000/getsingleitem",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-20T14:49:15.323Z",
+            "modified": "2023-07-20T14:49:15.323Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":1689864502964\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f7d0d7c0-4e48-4746-a8e2-1736653632be",
+            "colId": "2d7b72d3-b13f-47b4-9daf-2e30bb3cad7d",
+            "containerId": "",
+            "name": "itemupdate",
+            "url": "http://localhost:5000/itemupdate",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-07-20T15:00:39.278Z",
+            "modified": "2023-07-20T15:00:39.278Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "prashant"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "surajsurajsurajsurajsurajsurajsurajsurajsuraj"
+                    },
+                    {
+                        "name": "is_Active",
+                        "value": "false"
+                    },
+                    {
+                        "name": "id",
+                        "value": "1689864502964"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\Dell\\Pictures\\mob1.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5ba12e78-5306-4d8f-bf16-4308c4ae6da6",
+            "colId": "2d7b72d3-b13f-47b4-9daf-2e30bb3cad7d",
+            "containerId": "",
+            "name": "http://localhost:4000/api/profile_category_create",
+            "url": "http://localhost:5000/deleteitem",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-07-20T15:07:40.404Z",
+            "modified": "2023-07-20T15:07:40.404Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
